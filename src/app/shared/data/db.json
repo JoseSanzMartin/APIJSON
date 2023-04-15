@@ -33,6 +33,10 @@
     {
       "id": 7,
       "name": "New Student"
+    },
+    {
+      "id": 8,
+      "name": "New Student"
     }
   ],
   "courses": [
