@@ -21,21 +21,25 @@ export class StudentsComponent {
     });
   }
 
-  addStudent(): void {
-    const newStudent = {
-      id: this.students.length + 1,
-      name: "New Student",
-    };
-    this.studentService.createStudent(newStudent).subscribe(() => {
-      this.loadStudents();
-    });
+  addStudent(newStudentName: string): void {
+    if (newStudentName) {
+      const newStudent = {
+        id: this.students.length + 1,
+        name: newStudentName,
+      };
+      this.studentService.createStudent(newStudent).subscribe(() => {
+        this.loadStudents();
+      });
+    }
   }
 
-  updateStudent(student: any): void {
-    student.name = "Updated Student";
-    this.studentService.updateStudent(student).subscribe(() => {
-      this.loadStudents();
-    });
+  updateStudent(student: any, newName: string): void {
+    if (newName) {
+      student.name = newName;
+      this.studentService.updateStudent(student).subscribe(() => {
+        this.loadStudents();
+      });
+    }
   }
 
   deleteStudent(student: any): void {

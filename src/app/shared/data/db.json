@@ -20,7 +20,7 @@
     },
     {
       "id": 4,
-      "name": "Rigoberto Francini Fettuchini"
+      "name": "Godofredo Azón Fernandez"
     },
     {
       "id": 5,
@@ -32,17 +32,21 @@
     },
     {
       "id": 7,
-      "name": "New Student"
+      "name": "Jordi Otero Urbaleja"
     },
     {
       "id": 8,
-      "name": "New Student"
+      "name": "Pere Vivó Sanchis"
+    },
+    {
+      "id": 9,
+      "name": "perico juan froilan de todos los santos"
     }
   ],
   "courses": [
     {
       "id": 1,
-      "name": "Curso de cocina"
+      "name": "Curso uno"
     },
     {
       "id": 2,
@@ -59,6 +63,14 @@
     {
       "id": 5,
       "name": "IT Academy"
+    },
+    {
+      "id": 6,
+      "name": "New Course"
+    },
+    {
+      "id": 7,
+      "name": "Curso de la vida"
     }
   ]
 }

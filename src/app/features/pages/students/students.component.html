@@ -1,6 +1,15 @@
 <div class="container">
-  <h1 class="my-4">Students</h1>
-  <button class="btn btn-primary mb-3" (click)="addStudent()">
+  <h1 class="my-4 text-center">Students</h1>
+  <input
+    #newStudentName
+    class="form-control form-control-sm mr-2 d-inline-block"
+    style="width: auto"
+    placeholder="New student name"
+  />
+  <button
+    class="btn btn-primary mb-3"
+    (click)="addStudent(newStudentName.value)"
+  >
     Add Student
   </button>
   <table class="table table-bordered table-striped">
@@ -16,9 +25,14 @@
         <td>{{ student.id }}</td>
         <td>{{ student.name }}</td>
         <td>
+          <input
+            #newName
+            class="form-control form-control-sm mr-2"
+            placeholder="New name"
+          />
           <button
             class="btn btn-warning btn-sm mr-2"
-            (click)="updateStudent(student)"
+            (click)="updateStudent(student, newName.value)"
           >
             Update
           </button>
