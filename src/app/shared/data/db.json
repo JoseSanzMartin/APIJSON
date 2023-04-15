@@ -1,0 +1,48 @@
+{
+  "signupUsersList": [
+    {
+      "email": "bolu@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Manolo Jiménez Martínez"
+    },
+    {
+      "id": 2,
+      "name": "José Sanz Martín"
+    },
+    {
+      "id": 3,
+      "name": "Pedro De La Rosa Lopez"
+    },
+    {
+      "id": 4,
+      "name": "Rigoberto Francini Fettuchini"
+    },
+    {
+      "id": 5,
+      "name": "Isabel Ayuso Macarra"
+    },
+    {
+      "id": 6,
+      "name": "Alejandro Pérez León"
+    },
+    {
+      "id": 7,
+      "name": "Diego Sanz Sánchez"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Vueling University"
+    },
+    {
+      "id": 2,
+      "title": "IT Academy"
+    }
+  ]
+}
