@@ -1,0 +1,30 @@
+<div class="container">
+  <h1 class="my-4">Courses</h1>
+  <button class="btn btn-primary mb-3" (click)="addCourse()">Add Course</button>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses">
+        <td>{{ course.id }}</td>
+        <td>{{ course.name }}</td>
+        <td>
+          <button
+            class="btn btn-warning btn-sm mr-2"
+            (click)="updateCourse(course)"
+          >
+            Update
+          </button>
+          <button class="btn btn-danger btn-sm" (click)="deleteCourse(course)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

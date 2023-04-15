@@ -38,11 +38,23 @@
   "courses": [
     {
       "id": 1,
-      "title": "Vueling University"
+      "name": "Curso de cocina"
     },
     {
       "id": 2,
-      "title": "IT Academy"
+      "name": "Vueling University"
+    },
+    {
+      "id": 3,
+      "name": "New Course"
+    },
+    {
+      "id": 4,
+      "name": "Ironhack Bootcamp"
+    },
+    {
+      "id": 5,
+      "name": "IT Academy"
     }
   ]
 }

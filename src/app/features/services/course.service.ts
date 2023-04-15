@@ -11,18 +11,18 @@ export class CourseService {
   constructor(private http: HttpClient) {}
 
   getCourses(): Observable<any> {
-    return this.http.get<any>("${this.apiUrl}/courses");
+    return this.http.get<any>(this.apiUrl + "/courses");
   }
 
   createCourse(course: any): Observable<any> {
-    return this.http.post<any>("${this.apiUrl}/courses", course);
+    return this.http.post<any>(this.apiUrl + "/courses", course);
   }
 
   updateCourse(course: any): Observable<any> {
-    return this.http.put<any>("${this.apiUrl}/courses/${course.id}", course);
+    return this.http.put<any>(this.apiUrl + "/courses/" + course.id, course);
   }
 
   deleteCourse(id: number): Observable<any> {
-    return this.http.delete<any>("${this.apiUrl}/courses/${id}");
+    return this.http.delete<any>(this.apiUrl + "/courses/" + id);
   }
 }
