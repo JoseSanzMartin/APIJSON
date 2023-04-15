@@ -7,9 +7,10 @@ import { SignupComponent } from "./features/pages/signup/signup.component";
 import { LoginComponent } from "./features/pages/login/login.component";
 import { HomeComponent } from "./features/pages/home/home.component";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { StudentsComponent } from './features/pages/students/students.component';
 
 @NgModule({
-  declarations: [AppComponent, SignupComponent, LoginComponent, HomeComponent],
+  declarations: [AppComponent, SignupComponent, LoginComponent, HomeComponent, StudentsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
