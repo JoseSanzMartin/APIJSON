@@ -7,7 +7,7 @@ import { LoginComponent } from "./features/pages/login/login.component";
 import { HomeComponent } from "./features/pages/home/home.component";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { StudentsComponent } from "./features/pages/students/students.component";
-import { CoursesComponent } from './features/pages/courses/courses.component';
+import { CoursesComponent } from "./features/pages/courses/courses.component";
 
 @NgModule({
   declarations: [
