@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="my-4">Students</h1>
+  <button class="btn btn-primary mb-3" (click)="addStudent()">
+    Add Student
+  </button>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>
+          <button
+            class="btn btn-warning btn-sm mr-2"
+            (click)="updateStudent(student)"
+          >
+            Update
+          </button>
+          <button
+            class="btn btn-danger btn-sm"
+            (click)="deleteStudent(student)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
