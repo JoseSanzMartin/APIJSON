@@ -1,0 +1,7 @@
+coverage
+node_modules/
+build/
+env/
+/.vscode
+dist
+.gitignore
