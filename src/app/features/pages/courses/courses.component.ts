@@ -21,21 +21,25 @@ export class CoursesComponent {
     });
   }
 
-  addCourse(): void {
-    const newCourse = {
-      id: this.courses.length + 1,
-      name: "New Course",
-    };
-    this.courseService.createCourse(newCourse).subscribe(() => {
-      this.loadCourses();
-    });
+  addCourse(newCourseName: string): void {
+    if (newCourseName) {
+      const newCourse = {
+        id: this.courses.length + 1,
+        name: newCourseName,
+      };
+      this.courseService.createCourse(newCourse).subscribe(() => {
+        this.loadCourses();
+      });
+    }
   }
 
-  updateCourse(course: any): void {
-    course.name = "Updated Course";
-    this.courseService.updateCourse(course).subscribe(() => {
-      this.loadCourses();
-    });
+  updateCourse(course: any, newName: string): void {
+    if (newName) {
+      course.name = newName;
+      this.courseService.updateCourse(course).subscribe(() => {
+        this.loadCourses();
+      });
+    }
   }
 
   deleteCourse(course: any): void {
